@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+.about-page {
+  font-family: 'Inter', sans-serif;
+  background: var(--light-grey);
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, var(--navy-blue) 0%, var(--navy-blue-dark) 100%);
+  padding: 100px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.about-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--sparkle-yellow);
+}
+
+.about-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+
+/* Section Titles */
+.section-title-left {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title-left::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--sparkle-yellow);
+}
+
+.section-header-center {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title-center {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+.section-title-center::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  background: var(--sparkle-yellow);
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--medium-grey);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.who-we-are-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.who-we-are-image {
+  width: 100%;
+  height: 400px;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.who-we-are-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.who-we-are-img:hover {
+  transform: scale(1.05);
+}
+
+.who-we-are-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--medium-grey);
+  margin-bottom: 30px;
+}
+
+.who-we-are-text strong {
+  color: var(--navy-blue);
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.mission, .vision {
+  background: var(--light-grey);
+  padding: 25px;
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid var(--navy-blue);
+}
+
+.mission h3, .vision h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 10px;
+}
+
+.mission p, .vision p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--medium-grey);
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 0;
+  background: var(--light-grey);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: 40px 30px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid #eaeaea;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--navy-blue);
+}
+
+.service-icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 15px;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--medium-grey);
+}
+
+/* Industries Section */
+.industries-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.industry-card {
+  background: var(--light-grey);
+  border-radius: var(--border-radius-md);
+  padding: 30px 20px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid #eaeaea;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  background: var(--navy-blue);
+  color: var(--white);
+  box-shadow: var(--shadow-navy);
+}
+
+.industry-card:hover .industry-name {
+  color: var(--white);
+}
+
+.industry-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-grey);
+  transition: var(--transition);
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+  padding: 80px 0;
+  background: var(--light-grey);
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.why-choose-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid #eaeaea;
+}
+
+.why-choose-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--navy-blue);
+}
+
+.why-choose-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: rgba(11, 1, 75, 0.05);
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: var(--transition);
+}
+
+.why-choose-card:hover .why-choose-icon {
+  background: var(--navy-blue);
+  color: var(--sparkle-yellow);
+  transform: rotateY(180deg);
+}
+
+.why-choose-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 15px;
+}
+
+.why-choose-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--medium-grey);
+}
+
+/* Team Section */
+.team-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 1px solid #eaeaea;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--navy-blue);
+}
+
+.team-card-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.team-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-card-img {
+  transform: scale(1.1);
+}
+
+.team-card-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.team-card-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 5px;
+}
+
+.team-card-position {
+  font-size: 1rem;
+  color: var(--medium-grey);
+  margin-bottom: 10px;
+}
+
+.team-card-phone {
+  font-size: 1rem;
+  color: var(--dark-grey);
+  font-weight: 500;
+}
+
+/* Locations Section */
+.locations-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.location-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--navy-blue);
+}
+
+.location-flag {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-flag img {
+  width: 60px;   /* adjust size */
+  height: 60px;
+  object-fit: contain;
+}
+
+.location-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+}
+
+/* Contact Info Box */
+.contact-info-section {
+  padding: 60px 0;
+  background: var(--white);
+}
+
+.contact-info-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.contact-info-wrapper .contact-info-box {
+  flex: 1;
+  background: var(--light-grey);
+  padding: 50px;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--navy-blue);
+  text-align: left;          /* aligns content to the left */
+  margin: 0;
+  max-width: none;
+}
+
+.contact-info-wrapper .map-container {
+  flex: 1;
+  min-width: 0;           /* allows the container to shrink below its content */
+  overflow: hidden;       /* prevents any overflow outside the container */
+  display: flex;
+  align-items: stretch;
+}
+
+.contact-info-wrapper .map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;      /* adjust as needed */
+  border-radius: 12px;
+  display: block;         /* removes extra space below iframe */
+}
+
+/* Keep original heading and paragraph styles inside the box */
+.contact-info-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 30px;
+}
+
+.contact-info-box p {
+  font-size: 1.1rem;
+  color: var(--dark-grey);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.contact-info-box p strong {
+  color: var(--navy-blue);
+}
+
+.contact-info-box .btn {
+  margin-top: 30px;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .who-we-are-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .services-grid,
+  .why-choose-grid,
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .locations-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .about-hero-content h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/* Responsive adjustments for the contact section */
+
+/* Responsive for tablets and smaller devices */
+@media (max-width: 768px) {
+  /* Fix other sections */
+  .services-grid,
+  .why-choose-grid,
+  .industries-grid {
+    grid-template-columns: 1fr;   /* stack on mobile */
+  }
+  .mission-vision {
+    grid-template-columns: 1fr;   /* mission & vision stack */
+  }
+  .about-hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .section-title-center {
+    font-size: 2rem;
+  }
+  
+  .contact-info-wrapper .contact-info-box {
+    padding: 20px;
+  }
+  .contact-info-wrapper .map-container iframe {
+    min-height: 300px;
+  }
+
+
+  /* Keep contact two‑column layout? No, on 768px we want it to stack too */
+  .contact-info-wrapper {
+    flex-direction: column;
+  }
+}
